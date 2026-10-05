@@ -9,7 +9,8 @@
     "preview": "vite preview --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write src scripts vite.config.ts",
-    "export:html": "node scripts/export-single-file.mjs"
+    "export:html": "node scripts/export-single-file.mjs",
+    "deploy:pages": "node scripts/deploy-pages.mjs"
   },
   "engines": {
     "node": ">=22.12.0"
