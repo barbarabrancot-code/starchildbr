@@ -1,0 +1,326 @@
+.mascot-wrap {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+}
+.mascot {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
+}
+.mascot > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mascot-float {
+  animation: float 5s ease-in-out infinite;
+  transform-origin: center;
+}
+.mascot-body {
+  transform-origin: 50% 62%;
+  transition: transform 0.6s;
+}
+.is-chewing .mascot-body {
+  animation: chomp 0.55s ease-in-out 3;
+}
+.mascot-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: blink 7s infinite;
+}
+.bubbles {
+  animation: float 6s ease-in-out infinite reverse;
+}
+.snack-tray {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin-top: -6px;
+}
+.snack-tray > p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #586b4c !important;
+  min-height: 21px;
+  margin-bottom: 15px !important;
+}
+.snack-tray > div {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+.cookie-button {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  transition: transform 0.2s;
+}
+.cookie-button:hover:not(:disabled) {
+  transform: translateY(-6px) rotate(-4deg);
+}
+.cookie-button > span:last-child {
+  font-size: 9px;
+  color: #728168;
+  white-space: nowrap;
+}
+.cookie,
+.flying-cookie {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: #ead5a9;
+  border: 2px solid #d9bd81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7a6947;
+  position: relative;
+  box-shadow:
+    inset 0 2px 0 #fff4,
+    inset 0 -3px 0 #b99c5520,
+    0 5px 8px #2f472014;
+}
+.cookie:before,
+.flying-cookie:before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px dashed #bca26a90;
+  border-radius: 8px;
+}
+.cookie i,
+.flying-cookie i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #9b7c42;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+.cookie i:nth-of-type(2),
+.flying-cookie i:nth-of-type(2) {
+  left: auto;
+  right: 5px;
+  top: 28px;
+}
+.cookie i:nth-of-type(3),
+.flying-cookie i:nth-of-type(3) {
+  left: 29px;
+  top: 5px;
+  width: 3px;
+  height: 3px;
+}
+.snack-tray > small {
+  display: block;
+  font-size: 9px;
+  color: #87957b;
+  margin-top: 17px;
+}
+.snack-animation {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.flying-cookie {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  animation: cookie-flight 1.05s cubic-bezier(0.33, 0.1, 0.34, 1) forwards;
+  z-index: 3;
+}
+.crumb {
+  position: absolute;
+  left: 50%;
+  top: 59%;
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background: #c6a66d;
+  animation: crumb 0.7s 0.76s ease-out both;
+}
+.chomp-word {
+  position: absolute;
+  left: 59%;
+  top: 47%;
+  font-family: var(--sc-heading);
+  font-size: 19px;
+  font-weight: 600;
+  color: #657d42;
+  transform: rotate(-10deg);
+  animation: nom 0.7s 0.9s both;
+}
+.compact {
+  max-width: 170px;
+  margin: -35px auto -16px;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1deg);
+  }
+}
+@keyframes blink {
+  0%,
+  43%,
+  47%,
+  100% {
+    transform: scaleY(1);
+  }
+  45% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes chomp {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.065, 0.94);
+  }
+  65% {
+    transform: scale(0.98, 1.04);
+  }
+}
+@keyframes cookie-flight {
+  0% {
+    left: 6%;
+    top: 68%;
+    transform: rotate(-24deg) scale(1);
+    opacity: 1;
+  }
+  40% {
+    left: 28%;
+    top: 42%;
+    transform: rotate(25deg) scale(0.9);
+    opacity: 1;
+  }
+  75% {
+    left: 46%;
+    top: 53%;
+    transform: rotate(8deg) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    left: 48%;
+    top: 57%;
+    transform: rotate(-5deg) scale(0.03);
+    opacity: 0;
+  }
+}
+@keyframes crumb {
+  0% {
+    transform: translate(0, 0) scale(0.2);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0.1);
+    opacity: 0;
+  }
+}
+@keyframes nom {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) rotate(-10deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-14px) rotate(-10deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes page-in {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Reuse the original rendered character, not a redesigned vector substitute. */
+.original-mascot .mascot > svg {
+  overflow: visible;
+}
+.original-mascot .original-blob-body {
+  transform-origin: 50% 72%;
+  transform-box: view-box;
+}
+.original-mascot.is-chewing .mascot-float {
+  animation-play-state: paused;
+}
+.original-mascot.is-chewing .original-blob-body {
+  animation: original-chomp 0.38s 0.52s ease-in-out 3;
+}
+.original-mascot .flying-cookie {
+  animation: original-cookie-flight 1.05s cubic-bezier(0.33, 0.1, 0.34, 1)
+    forwards;
+}
+.original-mascot .crumb {
+  left: var(--mouth-x);
+  top: var(--mouth-y);
+}
+.original-mascot .chomp-word {
+  left: calc(var(--mouth-x) + 28px);
+  top: calc(var(--mouth-y) - 26px);
+}
+.original-mascot .level-4 .original-blob-body {
+  filter: drop-shadow(0 0 9px #d8ed9755);
+}
+@keyframes original-cookie-flight {
+  0% {
+    left: 7%;
+    top: 90%;
+    transform: rotate(-24deg) scale(1);
+    opacity: 1;
+  }
+  42% {
+    left: 27%;
+    top: 25%;
+    transform: rotate(25deg) scale(0.9);
+    opacity: 1;
+  }
+  78% {
+    left: calc(var(--mouth-x) - 22px);
+    top: calc(var(--mouth-y) - 22px);
+    transform: rotate(8deg) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    left: calc(var(--mouth-x) - 22px);
+    top: calc(var(--mouth-y) - 22px);
+    transform: scale(0.01);
+    opacity: 0;
+  }
+}
+@keyframes original-chomp {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.045, 0.95);
+  }
+  65% {
+    transform: scale(0.98, 1.025);
+  }
+}

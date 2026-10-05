@@ -1,0 +1,821 @@
+@media (min-width: 1600px) {
+  .welcome {
+    padding-top: 65px;
+  }
+  .welcome-world {
+    min-height: 710px;
+  }
+  .welcome h1 {
+    font-size: 73px;
+  }
+  .app-content {
+    padding-top: 56px;
+  }
+  .page-heading h1 {
+    font-size: 49px;
+  }
+}
+@media (max-width: 1200px) {
+  .welcome {
+    gap: 42px;
+    padding-inline: 35px;
+  }
+  .landing-header {
+    padding-inline: 35px;
+  }
+  .welcome-world {
+    min-height: 620px;
+    padding: 25px;
+  }
+  .welcome h1 {
+    font-size: 54px;
+  }
+  .app-content {
+    padding: 35px 27px 55px;
+  }
+  .app-header {
+    padding-inline: 27px;
+  }
+  .work-layout {
+    grid-template-columns: minmax(0, 1fr) 245px;
+    gap: 20px;
+  }
+  .move-card {
+    padding: 21px 18px;
+    gap: 12px;
+  }
+  .move-card h3 {
+    font-size: 22px;
+  }
+  .page-heading h1 {
+    font-size: 37px;
+  }
+  .portrait-layout {
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 25px;
+  }
+  .profile-card {
+    padding: 22px;
+  }
+  .portrait-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .portrait-footer p {
+    max-width: none;
+  }
+  .plan-card {
+    padding: 24px 17px;
+  }
+  .plan-price {
+    font-size: 32px;
+  }
+  .evolution-showcase {
+    gap: 20px;
+  }
+  .evolution-step {
+    padding: 16px;
+  }
+  .evolution-step .tag {
+    display: none;
+  }
+  .credits-overview {
+    gap: 25px;
+  }
+  .app-footer {
+    padding-inline: 27px;
+  }
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 192px;
+    padding-inline: 12px;
+  }
+  .sidebar > .wordmark {
+    font-size: 23px;
+    margin-inline: 5px;
+  }
+  .wordmark > svg {
+    width: 28px;
+  }
+  .app-body {
+    margin-left: 192px;
+  }
+  .workspace-label {
+    padding-inline: 5px;
+  }
+  .workspace-label strong {
+    max-width: 113px;
+  }
+  .sidebar nav button {
+    font-size: 11px;
+    gap: 9px;
+    padding-inline: 10px;
+  }
+  .work-layout {
+    grid-template-columns: minmax(0, 1fr) 218px;
+    gap: 17px;
+  }
+  .move-bottom {
+    flex-wrap: wrap;
+    gap: 11px;
+  }
+  .companion-card {
+    padding: 17px 13px;
+  }
+  .companion-card .snack-tray > div {
+    gap: 9px;
+  }
+  .companion-card .cookie-button > span:last-child {
+    font-size: 6px;
+  }
+  .work-heading {
+    align-items: flex-start;
+  }
+  .work-heading .edit-profile {
+    margin-top: 23px;
+  }
+  .work-heading h1 {
+    font-size: 33px;
+  }
+  .portrait-layout {
+    grid-template-columns: 1fr;
+  }
+  .portrait-aside {
+    padding-top: 0;
+    display: none;
+  }
+  .plan-grid {
+    grid-template-columns: 1fr;
+  }
+  .plan-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 30px;
+    align-items: start;
+  }
+  .plan-card > .tag {
+    grid-column: 1/-1;
+    justify-self: start;
+  }
+  .plan-card h2 {
+    margin: 0;
+  }
+  .plan-card > p {
+    grid-column: 1;
+    min-height: 0;
+  }
+  .plan-price {
+    grid-column: 1;
+    margin: 0;
+  }
+  .plan-card ul {
+    grid-column: 2;
+    grid-row: 2/5;
+    border: 0;
+    padding: 0;
+  }
+  .plan-card > button {
+    grid-column: 1/-1;
+  }
+  .evolution-showcase {
+    grid-template-columns: 1fr;
+  }
+  .evo-stage .mascot {
+    max-width: 280px;
+  }
+  .evo-stage {
+    padding-inline: 30px;
+  }
+  .evolution-steps {
+    gap: 8px;
+  }
+  .policy-card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .credits-overview {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .community-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 760px) {
+  .landing-header {
+    height: 73px;
+    padding: 0 23px;
+  }
+  .landing-header > div {
+    gap: 10px;
+  }
+  .header-link {
+    display: none;
+  }
+  .wordmark {
+    font-size: 24px;
+  }
+  .wordmark > svg {
+    width: 27px;
+  }
+  .welcome {
+    grid-template-columns: 1fr;
+    padding: 25px 23px 30px;
+    gap: 33px;
+  }
+  .welcome h1 {
+    font-size: 51px;
+    margin: 20px 0;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .welcome-intro {
+    font-size: 15px;
+    max-width: 450px;
+  }
+  .welcome .eyebrow {
+    font-size: 8px;
+  }
+  .intake-form {
+    max-width: none;
+  }
+  .form-pair {
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 10px;
+  }
+  .sample-picker {
+    margin-top: 23px;
+  }
+  .prototype-note {
+    font-size: 9px;
+  }
+  .welcome-world {
+    min-height: 0;
+    padding: 23px 25px;
+    max-width: 550px;
+    width: 100%;
+    justify-self: center;
+  }
+  .world-caption {
+    margin-top: 20px;
+  }
+  .world-bottom {
+    margin-top: 28px;
+  }
+  .welcome-world .mascot {
+    max-width: 310px;
+    margin-top: -10px;
+  }
+  .world-orbit {
+    width: 480px;
+    height: 480px;
+    top: 0;
+  }
+  .welcome-steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 25px;
+  }
+  .welcome-steps p {
+    max-width: none;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    inset: auto;
+    padding: 17px 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--sc-line);
+    background: #f0f3ed;
+  }
+  .sidebar > .wordmark {
+    margin: 0 0 18px;
+    font-size: 23px;
+  }
+  .workspace-label,
+  .sidebar-bottom {
+    display: none;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    gap: 7px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scrollbar-width: none;
+  }
+  .sidebar nav::-webkit-scrollbar {
+    display: none;
+  }
+  .sidebar nav button {
+    white-space: nowrap;
+    min-height: 37px;
+    padding: 9px 12px;
+    font-size: 11px;
+    gap: 7px;
+  }
+  .sidebar nav button > svg {
+    width: 16px;
+  }
+  .app-body {
+    margin-left: 0;
+    min-height: calc(100vh - 120px);
+  }
+  .app-header {
+    height: 55px;
+    padding: 0 20px;
+    gap: 10px;
+  }
+  .app-header > span {
+    font-size: 10px;
+  }
+  .app-header > div {
+    gap: 10px;
+  }
+  .app-header .demo-badge {
+    font-size: 8px;
+    padding: 5px 7px;
+  }
+  .credit-pill {
+    padding: 5px 9px;
+    font-size: 10px;
+    gap: 5px;
+  }
+  .credit-pill > span {
+    display: none;
+  }
+  .user-avatar {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .app-content {
+    padding: 28px 20px 45px;
+  }
+  .page-heading h1,
+  .work-heading h1 {
+    font-size: 33px;
+    line-height: 1.14;
+  }
+  .page-heading .eyebrow {
+    font-size: 8px;
+  }
+  .page-heading > p,
+  .page-heading > div > p {
+    font-size: 12px;
+    margin-top: 12px;
+    line-height: 1.8;
+  }
+  .work-heading {
+    gap: 10px;
+  }
+  .edit-profile {
+    font-size: 0 !important;
+    padding: 8px;
+  }
+  .edit-profile > svg {
+    width: 18px;
+    height: 18px;
+  }
+  .scope-note {
+    font-size: 9px;
+    align-items: flex-start;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+  }
+  .work-layout {
+    grid-template-columns: 1fr;
+  }
+  .companion-rail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .companion-card {
+    grid-row: 1/3;
+  }
+  .credit-card {
+    align-self: start;
+    margin: 0;
+    padding: 16px;
+  }
+  .credit-card strong {
+    font-size: 20px;
+  }
+  .credit-card strong > span {
+    font-size: 9px;
+  }
+  .connect-teaser {
+    margin: 0;
+    padding: 0 4px;
+    align-self: start;
+  }
+  .connect-teaser h3 {
+    font-size: 19px;
+  }
+  .connect-teaser p {
+    font-size: 10px;
+  }
+  .connect-teaser .text-button {
+    font-size: 10px;
+  }
+  .companion-card .cookie {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+  .companion-card .snack-tray > div {
+    gap: 8px;
+  }
+  .companion-card .snack-tray > p {
+    font-size: 8px;
+  }
+  .companion-card .snack-tray > div .cookie-button > span:last-child {
+    display: none;
+  }
+  .companion-card .snack-tray {
+    margin-top: -10px;
+  }
+  .companion-name {
+    margin-top: 17px;
+  }
+  .companion-name h3 {
+    font-size: 19px;
+  }
+  .companion-name p {
+    font-size: 9px;
+  }
+  .rail-heading {
+    font-size: 7px;
+  }
+  .rail-footnote {
+    font-size: 8px;
+  }
+  .move-card {
+    padding: 22px 18px;
+  }
+  .move-card h3 {
+    font-size: 23px;
+  }
+  .move-card p {
+    font-size: 12px;
+  }
+  .move-bottom {
+    flex-wrap: nowrap;
+  }
+  .action-button {
+    font-size: 10px;
+    padding: 10px 12px;
+  }
+  .section-title > span {
+    font-size: 9px;
+  }
+  .profile-card {
+    padding: 20px;
+  }
+  .profile-fields {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .profile-heading h2 {
+    font-size: 20px;
+  }
+  .profile-heading .tag {
+    font-size: 7px;
+  }
+  .business-monogram {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .goal-options button {
+    font-size: 10px;
+  }
+  .portrait-footer .meet-button {
+    width: 100%;
+  }
+  .connection-grid {
+    gap: 13px;
+  }
+  .connection-card {
+    padding: 19px;
+  }
+  .connection-card h2 {
+    font-size: 19px;
+  }
+  .connection-card .scope-box {
+    font-size: 9px;
+    padding: 9px;
+  }
+  .connection-action {
+    font-size: 10px;
+  }
+  .connection-card > p {
+    font-size: 11px;
+    min-height: 58px;
+  }
+  .connection-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .connection-card .tag {
+    font-size: 7px;
+  }
+  .privacy-panel {
+    padding: 21px;
+    gap: 12px;
+  }
+  .privacy-panel h3 {
+    font-size: 20px;
+  }
+  .privacy-panel p {
+    font-size: 11px;
+  }
+  .community-panel h2 {
+    font-size: 26px;
+  }
+  .evo-stage {
+    padding: 21px 20px 28px;
+  }
+  .evo-stage .mascot {
+    max-width: 300px;
+  }
+  .evolution-step strong {
+    font-size: 13px;
+  }
+  .evolution-step small {
+    font-size: 11px;
+  }
+  .policy-card {
+    padding: 22px;
+  }
+  .brand-cover {
+    max-height: 210px;
+  }
+  .credits-overview {
+    padding: 25px;
+  }
+  .credits-overview strong {
+    font-size: 50px;
+  }
+  .credit-milestones > div {
+    gap: 10px;
+  }
+  .credit-milestones strong {
+    font-size: 11px;
+  }
+  .credit-milestones p {
+    font-size: 9px;
+  }
+  .credit-milestones .outline-button {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .credit-milestones b {
+    font-size: 15px;
+  }
+  .milestone-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+  .milestone-icon > svg {
+    width: 16px;
+  }
+  .plan-card {
+    padding: 25px 22px;
+    gap: 12px 18px;
+  }
+  .plan-card li {
+    font-size: 10px;
+  }
+  .plan-card .plan-price {
+    font-size: 31px;
+  }
+  .plan-card .plan-price > span {
+    font-size: 8px;
+  }
+  .app-footer {
+    padding: 20px;
+    gap: 20px;
+    font-size: 8px;
+  }
+  .sc-dialog {
+    padding: 29px 23px;
+    max-height: 91dvh;
+    border-radius: 17px;
+    width: calc(100% - 24px);
+  }
+  .sc-dialog h2 {
+    font-size: 27px;
+  }
+  .sc-dialog .eyebrow {
+    font-size: 8px;
+  }
+  .dialog-close {
+    top: 11px;
+    right: 11px;
+    width: 27px;
+    height: 27px;
+  }
+  .sc-dialog .compact {
+    max-width: 150px;
+    margin-top: -24px;
+  }
+  .artifact-toolbar {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .artifact-toolbar > div {
+    gap: 18px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .artifact-toolbar .text-button {
+    font-size: 10px;
+  }
+  .preview-content {
+    padding: 25px;
+  }
+  .preview-content h3 {
+    font-size: 30px;
+  }
+  .preview-content p {
+    font-size: 11px;
+  }
+  .preview-art {
+    opacity: 0.2;
+    right: -80px;
+  }
+  .artifact-approval {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .artifact-approval p {
+    max-width: none;
+    font-size: 10px;
+  }
+  .artifact-approval > button {
+    width: 100%;
+  }
+  .toast {
+    bottom: 14px;
+    font-size: 11px;
+    padding: 13px 14px;
+  }
+  .discovery {
+    padding-top: 20px;
+  }
+  .discovery h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 760px) {
+  .business-preview-cover {
+    height: 142px;
+  }
+  .business-preview-profile,
+  .business-preview-copy,
+  .latest-posts {
+    padding-inline: 18px;
+  }
+  .business-preview-profile {
+    gap: 10px;
+  }
+  .example-logo {
+    width: 62px;
+    height: 62px;
+    font-size: 37px;
+  }
+  .preview-name-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .preview-name-row h2 {
+    font-size: 20px;
+  }
+  .latest-post-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .social-post {
+    min-height: 98px;
+  }
+  .post-menu {
+    padding: 10px;
+  }
+  .post-menu strong {
+    font-size: 15px;
+  }
+  .post-note strong {
+    font-size: 12px;
+  }
+  .profile-editor-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .profile-editor .detail-toggle {
+    padding-left: 0;
+  }
+}
+@media (max-width: 380px) {
+  .form-pair {
+    grid-template-columns: 1fr;
+  }
+  .welcome h1 {
+    font-size: 45px;
+  }
+  .landing-header {
+    padding-inline: 18px;
+  }
+  .landing-header .demo-badge {
+    font-size: 8px;
+  }
+  .welcome {
+    padding-inline: 18px;
+  }
+  .connection-grid {
+    grid-template-columns: 1fr;
+  }
+  .connection-card > p {
+    min-height: 0;
+  }
+  .plan-card {
+    grid-template-columns: 1fr;
+  }
+  .plan-card ul {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 10px 0;
+  }
+  .companion-rail {
+    grid-template-columns: 1fr;
+  }
+  .companion-card .mascot {
+    max-width: 200px;
+  }
+  .companion-card {
+    grid-row: auto;
+  }
+  .companion-card .snack-tray > div .cookie-button > span:last-child {
+    display: block;
+    font-size: 8px;
+  }
+  .app-header > span {
+    max-width: 125px;
+  }
+  .move-card h3 {
+    font-size: 21px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .snack-animation .flying-cookie,
+  .snack-animation .crumb {
+    display: none;
+  }
+  .snack-animation .chomp-word {
+    animation: none;
+    opacity: 1;
+  }
+  .mascot-float,
+  .mascot-body,
+  .mascot-eyes {
+    transform: none !important;
+  }
+}
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+.reduce-motion .flying-cookie,
+.reduce-motion .crumb {
+  display: none;
+}
+.reduce-motion .chomp-word {
+  animation: none !important;
+  opacity: 1;
+}
+.reduce-motion .mascot-float,
+.reduce-motion .mascot-body {
+  transform: none !important;
+}

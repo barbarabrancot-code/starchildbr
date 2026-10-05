@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+:root {
+  --sc-bg: #f7f9f5;
+  --sc-ink: #20372c;
+  --sc-muted: #6b7971;
+  --sc-line: #dfe5dc;
+  --sc-soft: #edf1e7;
+  --sc-accent: #d1e76b;
+  --sc-heading: "Space Grotesk", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--sc-bg);
+  color: var(--sc-ink);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #849d42;
+  outline-offset: 4px;
+}
+::selection {
+  background: #d9ec9d;
+  color: #20372c;
+}
+.sc-app button {
+  border: 0;
+  color: inherit;
+}
+.sc-app h1,
+.sc-app h2,
+.sc-app h3 {
+  font-family: var(--sc-heading);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+.sc-app h1,
+.sc-app h2,
+.sc-app h3,
+.sc-app p {
+  margin: 0;
+}
+.sc-app p {
+  color: var(--sc-muted);
+}
+.sc-app svg {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sc-app input:not([type="checkbox"]),
+.sc-app select,
+.sc-app textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--sc-line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--sc-ink);
+  outline: none;
+  transition:
+    border 0.2s,
+    box-shadow 0.2s;
+}
+.sc-app input:focus,
+.sc-app select:focus,
+.sc-app textarea:focus {
+  border-color: #859c61;
+  box-shadow: 0 0 0 3px #d8e8b557;
+}
+.sc-app input::placeholder,
+.sc-app textarea::placeholder {
+  color: #8d978e;
+  font-size: 13px;
+}
+.sc-app textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+.sc-app label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #415448;
+  letter-spacing: 0.005em;
+}
+.sc-app label input,
+.sc-app label select,
+.sc-app label textarea {
+  display: block;
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sc-app label > small {
+  font-weight: 400;
+  color: var(--sc-muted);
+  margin-left: 3px;
+}
+.sc-app input[type="checkbox"] {
+  accent-color: #446341;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  box-shadow: none;
+}
+.skip-link {
+  position: fixed;
+  top: -100px;
+  z-index: 100;
+  padding: 15px;
+  background: white;
+  color: var(--sc-ink);
+}
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: #637354;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.eyebrow i,
+.status-dot,
+.demo-badge i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #839d6b;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.wordmark {
+  font-family: var(--sc-heading);
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: none;
+  white-space: nowrap;
+  padding: 0;
+}
+.wordmark > svg {
+  width: 31px;
+  height: 31px;
+}
+.demo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--sc-line) !important;
+  border-radius: 30px;
+  padding: 6px 10px;
+  background: transparent;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--sc-muted) !important;
+  white-space: nowrap;
+}
+.meet-button {
+  background: var(--sc-ink);
+  color: white !important;
+  border-radius: 11px;
+  min-height: 48px;
+  padding: 13px 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.meet-button:hover:not(:disabled) {
+  background: #375340;
+  transform: translateY(-1px);
+}
+.meet-button > svg {
+  transition: transform 0.2s;
+}
+.meet-button:hover > svg {
+  transform: translateX(3px);
+}
+.action-button {
+  background: var(--sc-accent);
+  border: 1px solid transparent !important;
+  border-radius: 8px;
+  padding: 10px 13px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  font-size: 11px;
+  font-weight: 500;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.action-button:hover:not(:disabled) {
+  background: #c6de58;
+  transform: translateY(-1px);
+}
+.outline-button {
+  background: transparent;
+  border: 1px solid var(--sc-line) !important;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.outline-button:hover:not(:disabled) {
+  background: #edf2e4;
+}
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 0;
+  background: none;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--sc-line);
+  background: #f7f9f2;
+  padding: 4px 7px;
+  border-radius: 5px;
+  font-size: 9px;
+  color: #7e8c6e;
+  white-space: nowrap;
+}
+.tag.green {
+  background: #e9f1dc;
+  border-color: #cddbbb;
+  color: #5e7d47;
+}
+.prototype-note {
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 18px !important;
+  max-width: 500px;
+  color: #839083 !important;
+}
+.error {
+  font-size: 12px;
+  color: #a04b39 !important;
+  margin-top: 8px !important;
+}
+.fine-print {
+  display: block;
+  font-size: 10px;
+  color: #8a9780;
+  line-height: 1.65;
+  margin-top: 16px;
+}
+.positive {
+  color: #658749;
+}
+.subtle {
+  color: #819078;
+  font-size: 12px;
+}
+.page-heading {
+  margin-bottom: 33px;
+}
+.page-heading .eyebrow {
+  margin-bottom: 15px;
+}
+.page-heading h1 {
+  font-size: 43px;
+  line-height: 1.12;
+  max-width: 760px;
+}
+.page-heading > p,
+.page-heading > div > p {
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 690px;
+  margin-top: 14px;
+}
+.page-heading p strong {
+  font-weight: 500;
+  color: #53634d;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+.section-title h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.section-title > span {
+  font-size: 10px;
+  color: #8a9683;
+}

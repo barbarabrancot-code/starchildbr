@@ -1,0 +1,13 @@
+import { createRoot } from "react-dom/client";
+import "tailwindcss/preflight.css";
+import "./starchild/base.css";
+import "./starchild/landing.css";
+import "./starchild/mascot.css";
+import "./starchild/workspace.css";
+import "./starchild/extras.css";
+import "./starchild/companion.css";
+import "./starchild/responsive.css";
+import { App } from "./starchild/App";
+const root = document.getElementById("root");
+if (!root) throw new Error("Starchild mount element missing");
+createRoot(root).render(<App />);

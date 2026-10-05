@@ -1,0 +1,644 @@
+.landing-header {
+  height: 90px;
+  max-width: 1376px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+.landing-header > div {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.header-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  background: none;
+}
+.welcome {
+  max-width: 1376px;
+  margin: auto;
+  padding: 40px 48px 30px;
+  display: grid;
+  grid-template-columns: 1.04fr 1fr;
+  column-gap: 72px;
+  row-gap: 54px;
+}
+.welcome h1 {
+  font-size: clamp(46px, 4.65vw, 68px);
+  line-height: 1.025;
+  letter-spacing: -0.065em;
+  margin: 25px 0 24px;
+}
+.welcome h1 span {
+  color: #819178;
+}
+.welcome-intro {
+  font-size: 16px;
+  max-width: 405px;
+  line-height: 1.7;
+  margin-bottom: 28px !important;
+}
+.intake-form {
+  max-width: 490px;
+}
+.form-pair {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+.input-icon {
+  position: relative;
+}
+.input-icon > svg {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  color: #8c998f;
+}
+.input-icon input {
+  padding-left: 37px !important;
+  font-size: 13px !important;
+}
+.intake-form .meet-button {
+  width: 100%;
+  margin-top: 22px;
+}
+.form-reassurance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--sc-muted);
+  margin-top: 12px;
+}
+.sample-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  margin-top: 32px;
+  max-width: 510px;
+}
+.sample-picker > span {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #7f8b7e;
+  font-size: 9px;
+  font-weight: 600;
+}
+.sample-picker button {
+  padding: 8px 10px;
+  border: 1px solid var(--sc-line);
+  border-radius: 7px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.sample-picker button:hover {
+  background: var(--sc-soft);
+}
+.sample-picker .sample-more {
+  border: 0;
+  padding-left: 0;
+}
+.more-examples {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.welcome-world {
+  position: relative;
+  align-self: start;
+  min-height: 670px;
+  padding: 28px 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html:has(.welcome),
+body:has(.welcome) {
+  background:
+    radial-gradient(
+      ellipse 70% 80% at 76% 38%,
+      #eef2d2 0%,
+      #e8eedc 38%,
+      transparent 75%
+    ),
+    var(--sc-bg);
+  background-attachment: fixed;
+  overflow-x: clip;
+}
+.world-top,
+.world-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  color: #79896d;
+}
+.world-top {
+  position: relative;
+  z-index: 2;
+}
+.world-bottom {
+  font-size: 9px;
+  line-height: 1.7;
+  margin-top: 38px;
+}
+.world-caption {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  z-index: 2;
+  margin: 40px auto 0;
+  color: #50663f;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 4px 18px rgba(80, 102, 63, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+}
+.world-orbit {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  border: 1px solid #fff8;
+  border-radius: 50%;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.world-orbit:before,
+.world-orbit:after {
+  content: "";
+  position: absolute;
+  inset: 34px;
+  border: 1px solid #fff5;
+  border-radius: 50%;
+}
+.world-orbit:after {
+  inset: 70px;
+}
+.welcome-world > .mascot-wrap {
+  margin-top: -5px;
+}
+.welcome-steps {
+  grid-column: 1/-1;
+  border-top: 1px solid var(--sc-line);
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.welcome-steps > div {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.welcome-steps b {
+  font-size: 11px;
+  color: #92a182;
+  font-weight: 500;
+  padding-top: 2px;
+}
+.welcome-steps p {
+  font-size: 12px;
+  max-width: 275px;
+}
+.welcome-steps strong {
+  color: #41513e;
+  font-weight: 600;
+}
+.discovery {
+  max-width: 520px;
+  padding: 15px 25px 70px;
+  margin: auto;
+  text-align: center;
+}
+.discovery-visual {
+  max-width: 245px;
+  margin: -15px auto -20px;
+}
+.discovery h1 {
+  font-size: 40px;
+  line-height: 1.12;
+  margin: 16px 0;
+}
+.discovery > p {
+  font-size: 13px;
+}
+.discovery-list {
+  margin: 28px auto;
+  text-align: left;
+  max-width: 370px;
+}
+.discovery-list > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  padding: 10px 0;
+  color: #a1aa96;
+}
+.discovery-list > div > span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--sc-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discovery-list .complete {
+  color: #5b744c;
+}
+.discovery-list .complete > span {
+  background: #e3edce;
+  border-color: #c8d8ae;
+}
+.discovery-list .current {
+  color: #455c39;
+}
+.discovery > .meet-button {
+  width: 100%;
+  margin-top: 22px;
+}
+.discovery > .text-button {
+  margin-top: 20px;
+}
+.mini-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #9aaa8460;
+  border-top-color: #9aaa84;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.source-intake {
+  display: grid;
+  gap: 17px;
+}
+.source-intake .input-icon input {
+  font-size: 15px !important;
+  padding-block: 15px;
+  min-height: 50px;
+}
+.source-intake .input-icon > svg {
+  top: 17px;
+}
+.source-intake .source-hint {
+  display: block;
+  margin-top: 8px;
+  font-weight: 400;
+  color: var(--sc-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.source-intake .input-icon input {
+  padding-right: 62px !important;
+}
+.source-intake .input-submit {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  border-radius: 9px;
+}
+.source-intake .suggestions {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(33, 56, 42, 0.16);
+  border: 1px solid #e1e7dc;
+}
+.suggestions li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  min-width: 0;
+}
+.suggestions li.active {
+  background: #f2f5ee;
+}
+.suggestions strong {
+  font-weight: 600;
+  color: var(--sc-ink);
+  white-space: nowrap;
+}
+.suggestions em {
+  flex: 1;
+  min-width: 0;
+  font-style: normal;
+  color: var(--sc-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.suggestions code {
+  margin-left: auto;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--sc-muted);
+  white-space: nowrap;
+}
+.suggestion-kind {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--sc-ink);
+  border: 1px solid #e1e7dc;
+}
+.suggestion-logo {
+  position: relative;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .suggestions em {
+    display: none;
+  }
+}
+.source-intake .input-submit:hover:not(:disabled) {
+  transform: translateY(-50%);
+}
+.source-intake .form-reassurance {
+  margin-top: -5px;
+}
+.source-intake .error {
+  margin: 0;
+}
+
+/* Desktop: the welcome screen fills the viewport exactly, with no scroll. */
+@media (min-width: 761px) {
+  html:has(.welcome),
+  body:has(.welcome) {
+    height: 100%;
+    overflow: hidden;
+  }
+  .sc-app:has(.welcome) {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sc-app:has(.welcome) .landing-header {
+    flex: none;
+    width: 100%;
+    height: 72px;
+  }
+  .welcome {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    padding-top: 0 !important;
+    padding-bottom: 24px;
+    grid-template-rows: minmax(0, 1fr);
+    row-gap: 20px;
+  }
+  .welcome-copy {
+    align-self: center;
+  }
+  .welcome h1 {
+    font-size: clamp(40px, min(4.65vw, 8.2vh), 68px);
+    margin: 0 0 clamp(20px, 4vh, 36px);
+  }
+  .welcome-intro {
+    margin-bottom: clamp(16px, 3vh, 28px) !important;
+  }
+  .welcome-world {
+    align-self: stretch;
+    min-height: 0 !important;
+    padding-block: 20px 18px !important;
+  }
+  .welcome-world .world-bottom {
+    margin-top: 0;
+  }
+  .welcome-world .mascot {
+    max-width: min(440px, max(200px, calc((100dvh - 400px) * 1.037)));
+    margin-top: 0;
+  }
+  .welcome-world .snack-tray > small {
+    display: none;
+  }
+  .welcome-steps {
+    padding-top: 18px;
+  }
+}
+.welcome-copy {
+  position: relative;
+  z-index: 2;
+}
+.discovery-list > div {
+  align-items: flex-start;
+  padding: 8px 0;
+  transition:
+    color 0.3s,
+    padding 0.3s;
+}
+.discovery-list .step-text strong {
+  font-weight: 500;
+  line-height: 24px;
+}
+.discovery-list .step-detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.4s ease,
+    opacity 0.3s;
+}
+.discovery-list .step-detail > p {
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--sc-muted);
+}
+.discovery-list .current .step-detail {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.discovery-list .complete {
+  padding: 4px 0;
+}
+.welcome .no-link {
+  margin-top: 14px;
+  font-size: 12px;
+}
+.manual .manual-form {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+  max-width: 420px;
+  margin: 26px auto 0;
+}
+.manual .manual-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.manual .manual-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.manual .manual-form .meet-button {
+  width: 100%;
+  margin-top: 8px;
+}
+@media (max-width: 480px) {
+  .manual .manual-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Desktop: analysis and manual screens also fill the viewport, no scroll. */
+@media (min-width: 761px) {
+  html:has(.discovery),
+  body:has(.discovery) {
+    height: 100%;
+    overflow: hidden;
+  }
+  .sc-app:has(.discovery) {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sc-app:has(.discovery) .landing-header {
+    flex: none;
+    width: 100%;
+    height: 72px;
+  }
+  .sc-app > div:has(> .welcome, > .discovery) {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .discovery {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0 16px;
+  }
+  .discovery-visual {
+    width: clamp(110px, 24vh, 245px);
+    margin: 0 auto -10px;
+  }
+  .discovery h1 {
+    font-size: clamp(28px, 5.2vh, 40px);
+    margin: clamp(6px, 1.4vh, 16px) 0;
+  }
+  .discovery-list {
+    width: 100%;
+    margin: clamp(6px, 2vh, 24px) auto;
+  }
+  .discovery > .meet-button {
+    margin-top: clamp(8px, 2vh, 22px);
+  }
+  .discovery > .text-button {
+    margin-top: clamp(6px, 1.4vh, 16px);
+  }
+  .manual .manual-form {
+    width: 100%;
+    gap: clamp(8px, 1.6vh, 14px);
+    margin-top: clamp(10px, 2vh, 26px);
+  }
+}
+
+/* Landing header stays pinned on the landing and analysis screens. */
+.sc-app .landing-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  background: transparent;
+}
+
+/* Welcome: companion chip sits above the headline; mascot grows with the viewport height. */
+.welcome-copy .world-caption {
+  display: inline-flex;
+  margin: 0 0 clamp(14px, 2.4vh, 24px);
+  font-size: 11px;
+}
+@media (min-width: 761px) {
+  .welcome-world > .mascot-wrap {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .welcome-world .mascot {
+    max-width: min(760px, max(220px, calc((100dvh - 300px) * 1.037)));
+  }
+  .welcome-world .world-orbit {
+    width: min(860px, calc(100dvh - 130px));
+    height: min(860px, calc(100dvh - 130px));
+    top: 46%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.welcome-world .world-bottom {
+  justify-content: flex-end;
+}
